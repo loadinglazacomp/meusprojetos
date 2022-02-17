@@ -16,6 +16,9 @@
     <link rel="shortcut icon" href="path/to/favicon.ico">
 
     <style>
+        body{
+            overflow-x:hidden;
+        }
         .tabelanoticiasmenores {
             margin: auto;
 
@@ -98,7 +101,7 @@
 
         }
 
-        .carousel-inner {
+      .carousel-inner {
             height: 400px;
             box-sizing: border-box;
         }
@@ -112,6 +115,13 @@
             height: 100%;
 
         }
+        .itensmenu{
+            opacity: 0;
+        }
+        .botaomenu:hover .itensmenu{
+            opacity: 1;
+        }
+
     </style>
 
 
@@ -124,6 +134,16 @@
 
 
     <div class="container-fluid p-0">
+        <div class="botaofloat">
+            <div class="itensmenu">
+                <ul>
+
+                    <li>Home</li>
+                    <li>Sobre nós</li>
+                </ul>
+                <img src="iconemenu.png" class="botaomenu" height="80px">
+            </div>
+        </div>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
 
             <li class="nav-item" role="presentation">
@@ -160,7 +180,7 @@
                         <div class="carousel-item active">
                             <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg"
                                 class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption ">
                                 <h2>"É incrível"</h2>
                                 <p>Crescimento de bilheteria local anima produtoras.</p>
                             </div>
@@ -168,7 +188,7 @@
                         <div class="carousel-item">
                             <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg"
                                 class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption ">
                                 <h2>"Sem fronteiras"</h2>
                                 <p>Projeto de lei facilita compra de ingressos online</p>
                             </div>
@@ -258,7 +278,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="https://monteazulpaulista.sp.gov.br/novosite/wp-content/uploads/2019/09/esporte-e-lazer-1-1500x650.png"
-                                class="d-block w-100" alt="...">
+                                class="imagemcarr d-block w-100" alt="...">
                             <div class="carousel-caption">
                                 <h2>"Mantendo a forma"</h2>
                                 <p>Cresce número de praticantes de esportes durante a pandemia.</p>
@@ -266,15 +286,15 @@
                         </div>
                         <div class="carousel-item">
                             <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg"
-                                class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
+                                class="imagemcarr d-block w-100" alt="...">
+                            <div class="carousel-caption ">
                                 <h2>Feito para você</h2>
                                 <p>Nova modalidade de esporte inclui jogar videogames.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://p2.trrsf.com/image/fget/cf/648/0/images.terra.com/2022/02/08/2022-02-08t174156z_1160315133_up1ei281d5utp_rtrmadp_3_soccer-club-pal-aly-report.jpg"
-                                class="d-block w-100" alt="...">
+                                class="imagemcarr d-block w-100" alt="...">
                             <div class="carousel-caption">
                                 <h2>É campeão</h2>
                                 <p>Time de várzea é novo campeão brasileiro.</p>
@@ -301,73 +321,65 @@
 
 
 
+        <div class="row" >
 
-
-        <div class="card" style="width: 18rem;">
-            <div class="card-canvas">
-                <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg" class="card-img-top"
-                    alt="...">
+            <div class="card col-sm-6 col-md-3" >
+                <div class="card-canvas">
+                    <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg" class="card-img-top"
+                        alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Novo campeão é anunciado</h5>
+                    <p class="card-text">Masterchef Brasil chega ao fim.</p>
+                    <div class="botao">
+                        <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">Novo campeão é anunciado</h5>
-                <p class="card-text">Masterchef Brasil chega ao fim.</p>
-                <div class="botao">
-                    <a href="#" class="btn btn-primary">Ler mais</a>
+
+            <div class="card col-sm-6 col-md-3" >
+                <div class="card-canvas">
+                    <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg" class="card-img-top"
+                        alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">"Estou realizada"</h5>
+                    <p class="card-text">Hacker consegue mudar a cor disso aqui e comove Brasil</p>
+                    <div class="botao">
+                        <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-sm-6 col-md-3" >
+                <div class="card-canvas">
+                    <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg" class="card-img-top"
+                        alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Nunca acaba?</h5>
+
+                    <p class="card-text">Novela da globo chega à sua vigésima temporada</p>
+                    <div class="botao">
+                        <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card col-sm-6 col-md-3" >
+                <div class="card-canvas">
+                    <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg" class="card-img-top"
+                        alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Agro</h5>
+                    <p class="card-text">É pop, é tec.</p>
+                    <div class="botao">
+                        <a href="#" class="btn btn-primary">Ler mais</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-        <div class="card" style="width: 18rem;">
-            <div class="card-canvas">
-                <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg" class="card-img-top"
-                    alt="...">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">"Estou realizada"</h5>
-                <p class="card-text">Hacker consegue mudar a cor disso aqui e comove Brasil</p>
-                <div class="botao">
-                    <a href="#" class="btn btn-primary">Ler mais</a>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="card" style="width: 18rem;">
-            <div class="card-canvas">
-                <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg" class="card-img-top"
-                    alt="...">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Nunca acaba?</h5>
-
-                <p class="card-text">Novela da globo chega à sua vigésima temporada</p>
-                <div class="botao">
-                    <a href="#" class="btn btn-primary">Ler mais</a>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="card" style="width: 18rem;">
-            <div class="card-canvas">
-                <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg" class="card-img-top"
-                    alt="...">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Agro</h5>
-                <p class="card-text">É pop, é tec.</p>
-                <div class="botao">
-                    <a href="#" class="btn btn-primary">Ler mais</a>
-                </div>
-            </div>
-        </div>
-
 
 
 
