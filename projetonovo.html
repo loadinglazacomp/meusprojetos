@@ -98,7 +98,7 @@
 
         .modalzao {
             margin: auto;
-            padding: 40px;
+            padding: 400px;
 
         }
 
@@ -166,7 +166,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Lazarini News</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" datoggle="collapse" data-bs-targit="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
@@ -182,33 +182,31 @@
                   </li>
     
                 </ul>
-              </div>
+            
             </div>
           </nav>
 
 
         <ul class="nav nav-tabs" id="myTab" role="tablist">
 
-            <li class="nav-item" role="presentation">
+            <li class="nav-item" role="">
                 <button class="nav-link active" id="cinema-tab" data-bs-toggle="tab" data-bs-target="#cinema"
                     type="button" role="tab" aria-controls="cinema" aria-selected="true">Cinema</button>
             </li>
 
-            <li class="nav-item" role="presentation">
+            <li class="nav-item" role="">
                 <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#esportes" type="button"
                     role="tab" aria-controls="esportes" aria-selected="false">Esportes</button>
             </li>
 
-            <li class="nav-item" role="presentation">
                 <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#musica" type="button"
                     role="tab" aria-controls="musica" aria-selected="false">Música</button>
-            </li>
 
         </ul>
 
 
         <div class="tab-content">
-            <div class="tab-pane fade show active" id="cinema" role="tabpanel" aria-labelledby="cinema-tab">
+            <div class="tab-pane" class="row" id="profile fade show active" id="cinema" role="tabpanel" aria-labelledby="cinema-tab">
 
                 <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -243,18 +241,18 @@
                                 <h2>Caiu</h2>
                                 <p>Preço de ingressos durante a semana caem em 15% em março.</p>
                             </div>
-                        </div>
+                        
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+                    <button class="carousel-control-next" type="button" data-ds-target="#carouselExampleCaptions2"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
+                </div>
                 </div>
             </div>
 
@@ -263,10 +261,10 @@
                 <div id="carouselExampleCaptions3" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1"
+                         aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="9"
                             aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2"
+                        <button type="button" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
@@ -282,16 +280,17 @@
                             <img src="https://i.ytimg.com/vi/haQ6SUBVLHM/maxresdefault.jpg" class="d-block w-100"
                                 alt="...">
                             <div class="carousel-caption ">
+                                <span class="visually-hidden">Previous</span>
                                 <h2>Morando de aluguel</h2>
                                 <p>Dupla sertaneja Fernando e Sorocaba perdem tudo após partida de truco.</p>
+                                <p>John Frusciante volta novamente à banda após quinquagésima terceira separação.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <img src="https://studiosol-a.akamaihd.net/uploadfile/letras/fotos/d/e/6/8/de68d2521081ec73ba7fb0845266084f.jpg"
                                 class="d-block w-100" alt="...">
-                            <div class="carousel-caption ">
-                                <h2>De volta ao lar</h2>
-                                <p>John Frusciante volta novamente à banda após quinquagésima terceira separação.</p>
+                            <div class="carousel-animado">
+                                <h2>De volta ao lar</h2>       
                             </div>
                         </div>
                     </div>
@@ -300,10 +299,10 @@
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3"
+                    <button class="carousel-control-next" type="button" data-bs-target="carouselExampleCaptions3"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                       
                     </button>
                 </div>
             </div>
@@ -311,12 +310,12 @@
 
                 <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
+                        <span class="visually-hidden">Next</span>
                         <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+                        <button type="button" data-bs-target="carouselExampleCaptions1" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -344,9 +343,9 @@
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1"
+                    <button class="carousel-control-prev" type="button" data-bs-target="carouselExampleCaptions1"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true">
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1"
@@ -366,7 +365,7 @@
 
         <div class="row">
 
-            <div class="card col-sm-6 col-md-3">
+            <div class="card col-sm-9 col-md-11">
                 <div class="card-canvas">
                     <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg" class="card-img-top"
                         alt="...">
@@ -394,9 +393,9 @@
                 </div>
             </div>
 
-            <div class="card col-sm-6 col-md-3">
+            <div class="card col-sm-9 col-md-3">
                 <div class="card-canvas">
-                    <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg" class="card-img-top"
+                    <img src="https://jornalsul.com.br/wp-content/2019/10/Tecnologia.jpeg" class="card-img-top"
                         alt="...">
                 </div>
                 <div class="card-body">
@@ -409,7 +408,7 @@
                 </div>
             </div>
 
-            <div class="card col-sm-6 col-md-3">
+            <div class="card col-sm-6 col-md-11">
                 <div class="card-canvas">
                     <img src="https://jornalsul.com.br/wp-content/uploads/2019/10/Tecnologia.jpeg" class="card-img-top"
                         alt="...">
@@ -453,7 +452,7 @@
 
 
 
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#example_Modal">
             Fale conosco
         </button>
 
@@ -463,7 +462,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Nosso contato</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="botton" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <p>E-mail: abcdefg@gmail.com</p>
@@ -493,13 +492,12 @@
                         text-align: right;
                         height: 300px;
                     }
-                </style><a href="https://www.embedgooglemap.net">add google maps to website</a>
+                </style><href="https://www.embedgooglemap.net">add google maps to website
                 <style>
                     .gmap_canvas {
                         overflow: hidden;
                         background: none !important;
                         height: 300px;
-                        width: 100%;
                     }
                 </style>
             </div>
